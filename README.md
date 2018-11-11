@@ -7,12 +7,14 @@ The idea is to have a role that is used multiple times with different inputs. It
 
 As behavior is depending on where variable is set, i found it inconsistent, therefore it seems to be a bug.
 
+The opened issue is : https://github.com/ansible/ansible/issues/48537.
+
 Here are some other issues that seems to be relative :
 
-- 2.0.0.2 : #14082
-- 2.0.2.0 : #15713
-- 2.2.0.0 : #19898
-- 2.3.0 : #17922 (same observation with 2.4.0 and 2.5.2)
+- 2.0.0.2 : https://github.com/ansible/ansible/issues/14082
+- 2.0.2.0 : https://github.com/ansible/ansible/issues/15713
+- 2.2.0.0 : https://github.com/ansible/ansible/issues/19898
+- 2.3.0 : https://github.com/ansible/ansible/issues/17922 (same observation with 2.4.0 and 2.5.2)
 
 Also, a stackoverflow that seems to be also relative : https://stackoverflow.com/questions/25694249/ansible-using-with-items-with-notify-handler/25704162#25704162
 
