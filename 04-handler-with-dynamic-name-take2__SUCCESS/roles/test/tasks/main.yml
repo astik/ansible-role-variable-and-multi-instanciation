@@ -1,0 +1,5 @@
+- debug:
+    msg: "echo {{ myinstance }}"
+
+- command: "echo {{ myinstance }}"
+  notify: "handle {{ myinstance_from_playbook }}"

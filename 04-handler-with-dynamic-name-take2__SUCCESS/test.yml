@@ -1,0 +1,9 @@
+- hosts: servers
+  gather_facts: no
+  roles:
+    - role: test
+      myinstance: "{{ myInstance1 }}"
+      myinstance_from_playbook: myInstance1_from_playbook
+    - role: test
+      myinstance: "{{ myInstance2 }}"
+      myinstance_from_playbook: myInstance2_from_playbook

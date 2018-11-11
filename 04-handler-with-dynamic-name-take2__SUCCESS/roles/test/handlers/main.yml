@@ -1,0 +1,2 @@
+- name: "handle {{ myinstance_from_playbook }}"
+  debug: msg="{{ myinstance }}"

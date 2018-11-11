@@ -1,0 +1,10 @@
+- hosts: servers
+  gather_facts: no
+  vars:
+    myInstance1: inst1
+    myInstance2: inst2
+  roles:
+      - role: test
+        myinstance: "{{ myInstance1 }}"
+      - role: test
+        myinstance: "{{ myInstance2 }}"
