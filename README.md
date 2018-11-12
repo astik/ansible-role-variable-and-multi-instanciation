@@ -18,6 +18,17 @@ Here are some other issues that seems to be relative :
 
 Also, a stackoverflow that seems to be also relative : https://stackoverflow.com/questions/25694249/ansible-using-with-items-with-notify-handler/25704162#25704162
 
+## TLDR
+
+Extract from https://github.com/ansible/ansible/issues/48466#issuecomment-437985126 :
+
+    Task names (including handlers) cannot depend on a host var as they need to be the same for all hosts,
+    it does not matter that you use the 'all' group as that is still flattened and 'per host'.
+
+So, it clarifies the fact that variables coming from group_vars are not populated and the one from playbook or command line are.
+
+If you need a way to make it work, check out demo 04.
+
 ## Demo
 
 Each demo are composed of a naive playbook with a very simple role **test**.
